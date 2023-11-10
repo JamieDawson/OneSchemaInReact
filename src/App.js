@@ -5,17 +5,21 @@ import "./App.css";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
+  const [oneSchemaMessage, setOneSchemaMessage] = useState("");
 
   const onLaunched = (data) => {
     // TODO handle launch
+    setOneSchemaMessage("Launched");
   };
 
   const onSuccess = (data) => {
     // TODO handle success
+
+    setOneSchemaMessage("Your CSV file was imported!");
   };
 
   const onCancel = () => {
-    // TODO handle cancel
+    setOneSchemaMessage("You canceled your import");
   };
 
   const onError = (message) => {
@@ -25,6 +29,7 @@ function App() {
   return (
     <div>
       <button onClick={() => setIsOpen(true)}>Import</button>
+      <div>{oneSchemaMessage}</div>
 
       <OneSchemaImporter
         /* managing state from your application */
