@@ -9,3 +9,7 @@ I created an account to test OneSchema, a platform designed to speed up CSV impo
 3. Click the import button on the app.
 4. Drag and drop the CSV file into OneSchema.
 5. Click the import button at the bottom right of OneSchema.
+
+# Play the video to see the app being used:
+
+https://github.com/JamieDawson/OneSchemaInReact/assets/16840579/5c19d06f-0871-489a-bc36-2306ce84c3d6
